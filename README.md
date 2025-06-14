@@ -9,21 +9,21 @@ This project automates the lifecycle of AWS EBS volumes and snapshots to reduce 
 
 #  Features
 
- Safe deletion of idle EBS volumes
+ - Safe deletion of idle EBS volumes
 
- Snapshot backup before deletion
+ - Snapshot backup before deletion
  
- Automatic cleanup of expired snapshots
+ - Automatic cleanup of expired snapshots
  
- do-not-delete tag protection
+ - if tag value is under any volume `` do-not-delete `` it'll not delete that volume tag protection
  
- Fully logged to S3 with CSV files
+ - Fully logged to S3 with CSV files
  
- Summary email via SNS
+ - Summary email via SNS
  
- Modular: built with two Lambda functions
+ - Modular: built with two Lambda functions
  
- Scheduled using Amazon EventBridge
+ - Scheduled using Amazon EventBridge
 
 # Steps for doing this Project
 
