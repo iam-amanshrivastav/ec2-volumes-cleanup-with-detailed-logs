@@ -10,24 +10,33 @@ This project automates the lifecycle of AWS EBS volumes and snapshots to reduce 
 #  Features
 
  Safe deletion of idle EBS volumes
+
  Snapshot backup before deletion
+ 
  Automatic cleanup of expired snapshots
+ 
  do-not-delete tag protection
+ 
  Fully logged to S3 with CSV files
+ 
  Summary email via SNS
+ 
  Modular: built with two Lambda functions
+ 
  Scheduled using Amazon EventBridge
 
-# Step 1: Create an S3 Bucket for Storing Logs
+# Steps for doing this Project
 
-# Step 2: Create an SNS Topic for Notifications
+Step 1: Create an S3 Bucket for Storing Logs
 
-# Step 3: Set Up IAM Role for Lambda
+Step 2: Create an SNS Topic for Notifications
 
-# Step 4: Lambda Function to Collect EBS Volume Data
+Step 3: Set Up IAM Role for Lambda
 
-# Step 5: Lambda Function to Delete Inactive Volumes & Manage Snapshots
+Step 4: Lambda Function to Collect EBS Volume Data
 
-# Step 6: Create a EventBridge rule to trigger EBS Volume Data funtion to collect the logs
+Step 5: Lambda Function to Delete Inactive Volumes & Manage Snapshots
 
-# Step 7: Create a EventBridge rule to trigger Lambda Function to Delete Inactive Volumes & Manage Snapshots.
+Step 6: Create a EventBridge rule to trigger EBS Volume Data funtion to collect the logs
+
+Step 7: Create a EventBridge rule to trigger Lambda Function to Delete Inactive Volumes & Manage Snapshots.
